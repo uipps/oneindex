@@ -159,7 +159,7 @@ class IndexController{
 	}
 
 	//文件夹下元素
-	function items($path, $fetch=false){
+	function items(){
 		$items = cache::get('dir_'.$this->path, function(){
 			return onedrive::dir($this->path);
 		}, config('cache_expire_time'));
