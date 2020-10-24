@@ -2,9 +2,14 @@
 
 require  __DIR__.'/init.php';
 
+$isVNET = false; //是否"世纪互联"账号
+
+
 //世纪互联
-//onedrive::$api_url = "https://microsoftgraph.chinacloudapi.cn/v1.0";
-//onedrive::$oauth_url = "https://login.partner.microsoftonline.cn/common/oauth2/v2.0";
+if ($isVNET) {
+	onedrive::$api_url = "https://microsoftgraph.chinacloudapi.cn/v1.0";
+	onedrive::$oauth_url = "https://login.partner.microsoftonline.cn/common/oauth2/v2.0";
+}
 
 
 /**

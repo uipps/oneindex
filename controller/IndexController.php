@@ -15,7 +15,7 @@ class IndexController{
 		$this->url_path = get_absolute_path(join('/', $paths));
 		$this->path = get_absolute_path(config('onedrive_root').$this->url_path);
 		//获取文件夹下所有元素
-		$this->items = $this->items($this->path);
+		$this->items = $this->items();
 	}
 
 	
@@ -192,7 +192,9 @@ class IndexController{
 		return $content;
 	}
 
-	//时候404
+	//////////
+	//是否404 //
+	//////////
 	function is404(){
 		if(!empty($this->items[$this->name]) || (empty($this->name) && is_array($this->items)) ){
 			return false;
