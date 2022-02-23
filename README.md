@@ -5,9 +5,10 @@ Onedrive Directory Index
 不占用服务器空间，不走服务器流量，  
 
 直接列出 OneDrive 目录，文件直链下载。  
+（最近2022.2.23发现安装失败，不折腾了，有空再完善）
 
 ## Demo
-[https://xn.tn](https://xn.tn)  
+[https://a.b](https://a.b)  
 
 ## 安装运行
 
@@ -19,7 +20,7 @@ Onedrive Directory Index
 3、OneIndex 程序   
 
 ## 配置：
-<img width="658" alt="image" src="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif">  
+<img width="658" alt="image" src="/files/images/install.gif">  
 
 ### 计划任务  
 [可选]**推荐配置**，非必需。后台定时刷新缓存，可增加前台访问的速度。  
